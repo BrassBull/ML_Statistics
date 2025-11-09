@@ -113,6 +113,36 @@ Cov(\xi,\eta) & \mathrm{Var}(\eta)
 **<p>a-b) </p>**
 ![Таблица для совместного и маргинального распределения](/table1.png)
 
+**<p>c) Математические ожидания:</p>**
+**<p>$E\xi = 2\cdot\tfrac{1}{16} + 3\cdot\tfrac18 + 4\cdot\tfrac{3}{16} + 5\cdot\tfrac14 + 6\cdot\tfrac{3}{16} + 7\cdot\tfrac18 + 8\cdot\tfrac{1}{16} = 5$</p>**
+**<p>$E\eta = (1)\cdot\tfrac34 + 0\cdot\tfrac14 = frac34$</p>**
+**<p>Мат. ожидание вектора: $E(\xi,\eta) = (5, frac34)$</p>**
+
+**<p>Вторые моменты и дисперсии: </p>**
+**<p>$E\xi^2 = 1\cdot\tfrac12 + 1\cdot\tfrac12 = 1 \quad\Rightarrow\quad \mathrm{Var}(\xi)=E\xi^2-(E\xi)^2=1-0=1$</p>**
+**<p>$E\eta^2 = 1\cdot\tfrac{11}{24}+0\cdot\tfrac14+1\cdot\tfrac{7}{24}=\frac{11+7}{24}=\frac{18}{24}=\frac34 \quad\Rightarrow\quad \mathrm{Var}(\eta)=E\eta^2-(E\eta)^2=\frac34-\left(-\frac16\right)^2=\frac34-\frac{1}{36}=\frac{27-1}{36}=\frac{26}{36}=\frac{13}{18}$</p>**
+
+**<p>Ковариация: </p>**
+**<p>$$E(\xi \eta)=(-1)(-1)\cdot\frac18 +(-1)\cdot0\cdot\frac1{12}+(-1)\cdot1\cdot\frac7{24}\\quad +1\cdot(-1)\cdot\frac13 +1\cdot0\cdot\frac16 +1\cdot1\cdot0 \= \frac18 -\frac7{24} -\frac13$$</p>**
+**<p>$Cov(\xi,\eta)=E(\xi\eta)-E\xi E\eta=E(\xi \eta) = -\frac12$</p>**
+
+**<p>Ковариационная матрица: </p>**
+**<p>$$\Sigma=\begin{pmatrix}
+\mathrm{Var}(\xi) & Cov(\xi,\eta) &
+Cov(\xi,\eta) & \mathrm{Var}(\eta)
+\end{pmatrix} =
+\begin{pmatrix}
+1 & -\tfrac12
+-\tfrac12 & \tfrac{13}{18}
+\end{pmatrix}$$</p>**
+
+**<p>Коэффициент корреляции: </p>**
+**<p>$$\rho_{\xi\eta}=\frac{Cov(\xi,\eta)}{\sqrt{\mathrm{Var}(\xi),\mathrm{Var}(\eta)}}
+=\frac{-\tfrac12}{\sqrt{1\cdot \tfrac{13}{18}}}
+= -\tfrac12\sqrt{\frac{18}{13}}
+= -\frac{3\sqrt2}{2\sqrt{13}}\approx -0.58835$$</p>**
+
+
 
 
 
