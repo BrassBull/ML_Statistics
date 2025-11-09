@@ -88,8 +88,8 @@
 **<p>$$E(\xi\eta)&=
 (-1)(-1)\cdot\frac18 +(-1)\cdot0\cdot\frac1{12}+(-1)\cdot1\cdot\frac7{24}\
 &\quad +1\cdot(-1)\cdot\frac13 +1\cdot0\cdot\frac16 +1\cdot1\cdot0 \
-&= \frac18 -\frac7{24} -\frac13$</p>**
-**<p>$\Cov(\xi,\eta)=E(\xi\eta)-E\xiE\eta=E(\xi\eta) = -\frac12$$</p>**
+&= \frac18 -\frac7{24} -\frac13$$</p>**
+**<p>$\Cov(\xi,\eta)=E(\xi\eta)-E\xiE\eta=E(\xi\eta) = -\frac12$</p>**
 
 **<p>Ковариационная матрица: </p>**
 **<p>$$\Sigma=\begin{pmatrix}
@@ -106,6 +106,7 @@ Cov(\xi,\eta) & \mathrm{Var}(\eta)
 =\frac{-\tfrac12}{\sqrt{1\cdot \tfrac{13}{18}}}
 = -\tfrac12\sqrt{\frac{18}{13}}
 = -\frac{3\sqrt2}{2\sqrt{13}}\approx -0.58835$$</p>**
+
 
 
 
