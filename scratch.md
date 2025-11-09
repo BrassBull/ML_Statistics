@@ -48,7 +48,7 @@
 
 ## 1.2.1
 
-**<p>1. $f(x,y) \leq 0$ для всех x,y</p>**
+**<p>1. $f(x,y) \ge 0$ для всех x,y</p>**
 **<p>2. Проверим условие нормировки:</p>**
 **<p>$\iint_{\mathbb{R}^2} f_\xi(x, y)dxdy
 = \frac{1}{\pi}
@@ -57,12 +57,57 @@
 
 **<p>Интеграл по x: $\int_{-\infty}^{\infty} \frac{dx}{1+x^2} = \pi$</p>**
 
-**<p>Интеграл по y: $\int_{-\infty}^{\infty} e^{-2|y|}, dy
+**<p>Интеграл по y: $\int_{-\infty}^{\infty} e^{-2|y|}dy
 = 2 \int_0^{\infty} e^{-2y}dy
 = 2 \cdot \frac{1}{2} = 1$</p>**
 
 **<p>Таким образом: $\iint_{\mathbb{R}^2} f_\xi(x, y)dxdy
 = \frac{1}{\pi} \cdot \pi \cdot 1 = 1$</p>**
+
+**<p>Ответ: да, это плотность</p>**
+
+## 1.2.2
+
+**<p>a) $P(\eta = -1) = 1/8 + 1/3 = 11/24$</p>**
+**<p>$P(\eta = 0) = 1/12 + 1/6 = 1/4$</p>**
+**<p>$P(\eta = 1) = 7/24$</p>**
+**<p>$P(\xi = -1) = 1/8 + 1/12 + 7/24 = 1/2$</p>**
+**<p>$P(\xi = 1) = 1/3 + 1/6 = 1/2$</p>**
+
+**<p>b) Математические ожидания:</p>**
+**<p>$E\xi = (-1)\cdot\tfrac12 + 1\cdot\tfrac12 = 0$</p>**
+**<p>$E\eta = (-1)\cdot\tfrac{11}{24} +0\cdot\tfrac14 +1\cdot\tfrac{7}{24}
+= \frac{-11+7}{24} = -\frac{4}{24} = -\frac{1}{6}$</p>**
+**<p>Мат. ожидание вектора: $E(\xi,\eta) = (0,-1/6)$</p>**
+
+**<p>Вторые моменты и дисперсии: </p>**
+**<p>$E\xi^2 = 1\cdot\tfrac12 + 1\cdot\tfrac12 = 1 \quad\Rightarrow\quad \mathrm{Var}(\xi)=E\xi^2-(E\xi)^2=1-0=1$</p>**
+**<p>$E\eta^2 = 1\cdot\tfrac{11}{24}+0\cdot\tfrac14+1\cdot\tfrac{7}{24}=\frac{11+7}{24}=\frac{18}{24}=\frac34 \quad\Rightarrow\quad \mathrm{Var}(\eta)=E\eta^2-(E\eta)^2=\frac34-\left(-\frac16\right)^2=\frac34-\frac{1}{36}=\frac{27-1}{36}=\frac{26}{36}=\frac{13}{18}$</p>**
+
+**<p>Ковариация: </p>**
+**<p>$E(\xi\eta)&=
+(-1)(-1)\cdot\frac18 +(-1)\cdot0\cdot\frac1{12}+(-1)\cdot1\cdot\frac7{24}\
+&\quad +1\cdot(-1)\cdot\frac13 +1\cdot0\cdot\frac16 +1\cdot1\cdot0 \
+&= \frac18 -\frac7{24} -\frac13$</p>**
+**<p>$\operatorname{Cov}(\xi,\eta)=E(\xi\eta)-E\xi,E\eta=E(\xi\eta) = -\frac12$</p>**
+
+**<p>Ковариационная матрица: </p>**
+**<p>$\Sigma=\begin{pmatrix}
+\mathrm{Var}(\xi) & \operatorname{Cov}(\xi,\eta)[4pt]
+\operatorname{Cov}(\xi,\eta) & \mathrm{Var}(\eta)
+\end{pmatrix} =
+\begin{pmatrix}
+1 & -\tfrac12[4pt]
+-\tfrac12 & \tfrac{13}{18}
+\end{pmatrix}$</p>**
+
+**<p>Коэффициент корреляции: </p>**
+**<p>$\rho_{\xi\eta}=\frac{\operatorname{Cov}(\xi,\eta)}{\sqrt{\mathrm{Var}(\xi),\mathrm{Var}(\eta)}}
+=\frac{-\tfrac12}{\sqrt{1\cdot \tfrac{13}{18}}}
+= -\tfrac12\sqrt{\frac{18}{13}}
+= -\frac{3\sqrt2}{2\sqrt{13}}\approx -0.58835$</p>**
+
+
 
 
 
