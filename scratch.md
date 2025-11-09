@@ -49,7 +49,7 @@
 ## 1.2.1
 
 **1. $f(x,y) \leq 0$ для всех x,y**
-**2. Проверим условие нормировки: [\iint_{\mathbb{R}^2} f_\xi(x, y), dx, dy = 1]**
+**2. Проверим условие нормировки**
 [\iint_{\mathbb{R}^2} f_\xi(x, y), dx, dy
 = \frac{1}{\pi}
 \left( \int_{-\infty}^{\infty} \frac{dx}{1+x^2} \right)
@@ -73,6 +73,7 @@
 \iint_{\mathbb{R}^2} f_\xi(x, y), dx, dy
 = \frac{1}{\pi} \cdot \pi \cdot 1 = 1.
 ]
+
 
 
 
