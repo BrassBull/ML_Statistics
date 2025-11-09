@@ -50,10 +50,11 @@
 
 **1. $f(x,y) \leq 0$ для всех x,y**
 **2. Проверим условие нормировки**
-[\iint_{\mathbb{R}^2} f_\xi(x, y), dx, dy
+[
+\iint_{\mathbb{R}^2} f_\xi(x, y), dx, dy
 = \frac{1}{\pi}
 \left( \int_{-\infty}^{\infty} \frac{dx}{1+x^2} \right)
-\left( \int_{-\infty}^{\infty} e^{-2|y|}, dy \right).
+\left( \int_{-\infty}^{\infty} e^{-2|y|}, dy \right)
 ]
 
 **Интеграл по (x):**
@@ -73,6 +74,7 @@
 \iint_{\mathbb{R}^2} f_\xi(x, y), dx, dy
 = \frac{1}{\pi} \cdot \pi \cdot 1 = 1.
 ]
+
 
 
 
