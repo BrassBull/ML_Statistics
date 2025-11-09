@@ -89,12 +89,12 @@
 (-1)(-1)\cdot\frac18 +(-1)\cdot0\cdot\frac1{12}+(-1)\cdot1\cdot\frac7{24}\
 &\quad +1\cdot(-1)\cdot\frac13 +1\cdot0\cdot\frac16 +1\cdot1\cdot0 \
 &= \frac18 -\frac7{24} -\frac13$</p>**
-**<p>$\operatorname{Cov}(\xi,\eta)=E(\xi\eta)-E\xi,E\eta=E(\xi\eta) = -\frac12$</p>**
+**<p>$\Cov(\xi,\eta)=E(\xi\eta)-E\xi,E\eta=E(\xi\eta) = -\frac12$</p>**
 
 **<p>Ковариационная матрица: </p>**
 **<p>$\Sigma=\begin{pmatrix}
-\mathrm{Var}(\xi) & \operatorname{Cov}(\xi,\eta)[4pt]
-\operatorname{Cov}(\xi,\eta) & \mathrm{Var}(\eta)
+\mathrm{Var}(\xi) & Cov(\xi,\eta)[4pt]
+Cov(\xi,\eta) & \mathrm{Var}(\eta)
 \end{pmatrix} =
 \begin{pmatrix}
 1 & -\tfrac12[4pt]
@@ -102,10 +102,11 @@
 \end{pmatrix}$</p>**
 
 **<p>Коэффициент корреляции: </p>**
-**<p>$\rho_{\xi\eta}=\frac{\operatorname{Cov}(\xi,\eta)}{\sqrt{\mathrm{Var}(\xi),\mathrm{Var}(\eta)}}
+**<p>$\rho_{\xi\eta}=\frac{Cov(\xi,\eta)}{\sqrt{\mathrm{Var}(\xi),\mathrm{Var}(\eta)}}
 =\frac{-\tfrac12}{\sqrt{1\cdot \tfrac{13}{18}}}
 = -\tfrac12\sqrt{\frac{18}{13}}
 = -\frac{3\sqrt2}{2\sqrt{13}}\approx -0.58835$</p>**
+
 
 
 
