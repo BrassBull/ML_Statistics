@@ -38,10 +38,10 @@
 **<p> P(A|1) = p1 </p>**
 
 **<p> 2. m = 2 </p>**
-**<p> $P(A|2) = 1 - 2p_2\*p_3 - {p_3}^2 </p>**
+**<p> $P(A|2) = 1 - 2p_2\*p_3 - {p_3}^2$ </p>**
 
 **<p> 3. m = 3 </p>**
-**<p> $P(A|3) = 1 - 3p_2\*{p_3}^2 </p>**
+**<p> $P(A|3) = 1 - 3p_2\*{p_3}^2$ </p>**
 
 **<p> 4. m = 4 </p>**
 **<p> P(A|4) = 0 по принципу Дирихле, куда бы ни попал четвертый снаряд самолет будет поражен </p>**
@@ -120,14 +120,14 @@ Cov(\xi,\eta) & \mathrm{Var}(\eta)
 
 **<p>Дисперсии: </p>**
 **<p>Так как (\xi_1,\xi_2) независимы</p>**
-**<p>$\operatorname{Var}(\xi)=\operatorname{Var}(\xi_1)+\operatorname{Var}(\xi_2)=2\cdot\frac54=2.5$</p>**
-**<p>$\operatorname{Var}(\eta)=\frac34\cdot\frac14=\frac{3}{16}$</p>**
+**<p>$Var(\xi)=Var(\xi_1) + Var(\xi_2)=2\cdot\frac54=2.5$</p>**
+**<p>$Var(\eta)=\frac34 - {\frac34}^2=\frac{3}{16}$</p>**
 
 **<p>Ковариация: </p>**
-**<p>$E[\varphi_1\varphi_2]=E[(\xi_1+\xi_2)\mathbf{1}{\xi_1\ne\xi_2}]=E[\xi_1+\xi_2]-E[(\xi_1+\xi_2)\mathbf{1}{\xi_1=\xi_2}]$</p>**
+**<p>$E[\xi \eta]=E[(\xi_1+\xi_2)\mathbf{1}{\xi_1\ne\xi_2}]=E[\xi_1+\xi_2]-E[(\xi_1+\xi_2)\mathbf{1}{\xi_1=\xi_2}]$</p>**
 **<p>$E[(\xi_1+\xi_2)\mathbf{1}{\xi_1=\xi_2}]=\sum_{k=1}^4 2k\cdot P(\xi_1=\xi_2=k)=\sum_{k=1}^4 2k\cdot\frac{1}{16}=\frac{2}{16}\sum_{k=1}^4 k=\frac{2}{16}\cdot 10=\frac{10}{8}=\frac54$</p>**
-**<p>$E[\varphi_1\varphi_2]=5-\frac54=\frac{15}{4}$</p>**
-**<p>$\operatorname{Cov}(\varphi_1,\varphi_2)=E[\varphi_1\varphi_2]-E[\varphi_1]E[\varphi_2]=\frac{15}{4}-5\cdot\frac34=\frac{15}{4}-\frac{15}{4}=0$</p>**
+**<p>$E[\xi \eta]=5-\frac54=\frac{15}{4}$</p>**
+**<p>$Cov(\xi,\eta)=E[\xi \eta]-E[\xi]E[\eta]=\frac{15}{4}-5\cdot\frac34=\frac{15}{4}-\frac{15}{4}=0$</p>**
 
 **<p>Ковариационная матрица: </p>**
 **<p>$$\Sigma=\begin{pmatrix}
@@ -135,15 +135,14 @@ Cov(\xi,\eta) & \mathrm{Var}(\eta)
 Cov(\xi,\eta) & \mathrm{Var}(\eta)
 \end{pmatrix} =
 \begin{pmatrix}
-1 & -\tfrac12
--\tfrac12 & \tfrac{13}{18}
+\frac52 & 0 &
+0 & \frac{3}{16}
 \end{pmatrix}$$</p>**
 
 **<p>Коэффициент корреляции: </p>**
 **<p>$$\rho_{\xi\eta}=\frac{Cov(\xi,\eta)}{\sqrt{\mathrm{Var}(\xi),\mathrm{Var}(\eta)}}
-=\frac{-\tfrac12}{\sqrt{1\cdot \tfrac{13}{18}}}
-= -\tfrac12\sqrt{\frac{18}{13}}
-= -\frac{3\sqrt2}{2\sqrt{13}}\approx -0.58835$$</p>**
+=\frac{0}{\sqrt{\frac52\cdot\frac{3}{16}}}=0$$</p>**
+
 
 
 
