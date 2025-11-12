@@ -118,13 +118,16 @@ Cov(\xi,\eta) & \mathrm{Var}(\eta)
 **<p>$E\eta = (1)\cdot\tfrac34 + 0\cdot\tfrac14 = frac34$</p>**
 **<p>Мат. ожидание вектора: $E(\xi,\eta) = (5, frac34)$</p>**
 
-**<p>Вторые моменты и дисперсии: </p>**
-**<p>$E\xi^2 = 1\cdot\tfrac12 + 1\cdot\tfrac12 = 1 \quad\Rightarrow\quad \mathrm{Var}(\xi)=E\xi^2-(E\xi)^2=1-0=1$</p>**
-**<p>$E\eta^2 = 1\cdot\tfrac{11}{24}+0\cdot\tfrac14+1\cdot\tfrac{7}{24}=\frac{11+7}{24}=\frac{18}{24}=\frac34 \quad\Rightarrow\quad \mathrm{Var}(\eta)=E\eta^2-(E\eta)^2=\frac34-\left(-\frac16\right)^2=\frac34-\frac{1}{36}=\frac{27-1}{36}=\frac{26}{36}=\frac{13}{18}$</p>**
+**<p>Дисперсии: </p>**
+**<p>Так как (\xi_1,\xi_2) независимы</p>**
+**<p>$\operatorname{Var}(\xi)=\operatorname{Var}(\xi_1)+\operatorname{Var}(\xi_2)=2\cdot\frac54=2.5$</p>**
+**<p>$\operatorname{Var}(\eta)=\frac34\cdot\frac14=\frac{3}{16}$</p>**
 
 **<p>Ковариация: </p>**
-**<p>$$E(\xi \eta)=(-1)(-1)\cdot\frac18 +(-1)\cdot0\cdot\frac1{12}+(-1)\cdot1\cdot\frac7{24}\\quad +1\cdot(-1)\cdot\frac13 +1\cdot0\cdot\frac16 +1\cdot1\cdot0 \= \frac18 -\frac7{24} -\frac13$$</p>**
-**<p>$Cov(\xi,\eta)=E(\xi\eta)-E\xi E\eta=E(\xi \eta) = -\frac12$</p>**
+**<p>$E[\varphi_1\varphi_2]=E[(\xi_1+\xi_2)\mathbf{1}{\xi_1\ne\xi_2}]=E[\xi_1+\xi_2]-E[(\xi_1+\xi_2)\mathbf{1}{\xi_1=\xi_2}]$</p>**
+**<p>$E[(\xi_1+\xi_2)\mathbf{1}{\xi_1=\xi_2}]=\sum_{k=1}^4 2k\cdot P(\xi_1=\xi_2=k)=\sum_{k=1}^4 2k\cdot\frac{1}{16}=\frac{2}{16}\sum_{k=1}^4 k=\frac{2}{16}\cdot 10=\frac{10}{8}=\frac54$</p>**
+**<p>$E[\varphi_1\varphi_2]=5-\frac54=\frac{15}{4}$</p>**
+**<p>$\operatorname{Cov}(\varphi_1,\varphi_2)=E[\varphi_1\varphi_2]-E[\varphi_1]E[\varphi_2]=\frac{15}{4}-5\cdot\frac34=\frac{15}{4}-\frac{15}{4}=0$</p>**
 
 **<p>Ковариационная матрица: </p>**
 **<p>$$\Sigma=\begin{pmatrix}
@@ -141,6 +144,7 @@ Cov(\xi,\eta) & \mathrm{Var}(\eta)
 =\frac{-\tfrac12}{\sqrt{1\cdot \tfrac{13}{18}}}
 = -\tfrac12\sqrt{\frac{18}{13}}
 = -\frac{3\sqrt2}{2\sqrt{13}}\approx -0.58835$$</p>**
+
 
 
 
