@@ -151,44 +151,57 @@ Cov(\xi,\eta) & \mathrm{Var}(\eta)
 ## 1.2.4
 
 **<p>a) Математические ожидания:</p>**
-**<p>$E\xi = 2\cdot\tfrac{1}{16} + 3\cdot\tfrac18 + 4\cdot\tfrac{3}{16} + 5\cdot\tfrac14 + 6\cdot\tfrac{3}{16} + 7\cdot\tfrac18 + 8\cdot\tfrac{1}{16} = 5$</p>**
-**<p>$E\eta = (1)\cdot\tfrac34 + 0\cdot\tfrac14 = frac34$</p>**
-**<p>Мат. ожидание вектора: $E(\xi,\eta) = (5, frac34)$</p>**
+**<p>$E\xi=\int_{-\pi}^{\pi} x\frac{dx}{2\pi}=0$</p>**
+**<p>$E\eta_1 = E[\cos\xi]=\frac{1}{2\pi}\int_{-\pi}^{\pi}\cos x dx = 0$</p>**
+**<p>$E\eta_2 = E[\sin\xi]=\frac{1}{2\pi}\int_{-\pi}^{\pi}\sin x dx = 0$</p>**
+**<p>Мат. ожидание вектора: $E(\eta_1,\eta_2) = (0, 0)$</p>**
 
 **<p>Дисперсии: </p>**
-**<p>Так как (\xi_1,\xi_2) независимы</p>**
-**<p>$Var(\xi)=Var(\xi_1) + Var(\xi_2)=2\cdot\frac54=\frac52$</p>**
-**<p>$Var(\eta)=\frac34 - {\frac34}^2=\frac{3}{16}$</p>**
+**<p>$E[\cos^2\xi]=\frac{1}{2\pi}\int_{-\pi}^{\pi}\cos^2 x dx=\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{1+\cos 2x}{2} dx=\frac12$</p>**
+**<p>$mathrm{Var}(\eta_1)=E[\cos^2\xi]-0=\frac12$</p>**
+**<p>$E[\sin^2\xi]=\frac{1}{2\pi}\int_{-\pi}^{\pi}\sin^2 x dx=\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{1-\cos 2x}{2} dx=\frac12$</p>**
+**<p>$mathrm{Var}(\eta_2)=E[\sin^2\xi]-0=\frac12$</p>**
 
 **<p>Ковариация: </p>**
-**<p>$E[\xi \eta]=E[(\xi_1+\xi_2)\mathbf{1}{\xi_1\ne\xi_2}]=E[\xi_1+\xi_2]-E[(\xi_1+\xi_2)\mathbf{1}{\xi_1=\xi_2}]$</p>**
-**<p>$E[(\xi_1+\xi_2)\mathbf{1}{\xi_1=\xi_2}]=\sum_{k=1}^4 2k\cdot P(\xi_1=\xi_2=k)=\sum_{k=1}^4 2k\cdot\frac{1}{16}=\frac{2}{16}\sum_{k=1}^4 k=\frac{2}{16}\cdot 10=\frac{10}{8}=\frac54$</p>**
-**<p>$E[\xi \eta]=5-\frac54=\frac{15}{4}$</p>**
-**<p>$Cov(\xi,\eta)=E[\xi \eta]-E[\xi]E[\eta]=\frac{15}{4}-5\cdot\frac34=\frac{15}{4}-\frac{15}{4}=0$</p>**
+**<p>$Cov(\eta_1,\eta_2)=E[\cos\xi\sin\xi]-E\cos\xi \* E\sin\xi=E\Big(\frac12\sin2\xi\Big)=\frac12\cdot0=0$</p>**
 
 **<p>Ковариационная матрица: </p>**
 **<p>$$\Sigma=\begin{pmatrix}
-\mathrm{Var}(\xi) & Cov(\xi,\eta) &
-Cov(\xi,\eta) & \mathrm{Var}(\eta)
+\mathrm{Var}(\eta_1) & Cov(\eta_1,\eta_2) &
+Cov(\eta_1,\eta_2) & \mathrm{Var}(\eta_2)
 \end{pmatrix} =
 \begin{pmatrix}
-\frac52 & 0 &
-0 & \frac{3}{16}
+\frac12 & 0 &
+0 & \frac12
 \end{pmatrix}$$</p>**
 
 **<p>Коэффициент корреляции: </p>**
-**<p>$$\rho_{\xi\eta}=\frac{Cov(\xi,\eta)}{\sqrt{\mathrm{Var}(\xi),\mathrm{Var}(\eta)}}
-=\frac{0}{\sqrt{\frac52\cdot\frac{3}{16}}}=0$$</p>**
+**<p>$$\rho_{\eta_1, \eta_2}=\frac{Cov(\eta_1,\eta_2)}{\sqrt{\mathrm{Var}(\eta_1),\mathrm{Var}(\eta_2)}}=0$$</p>**
 
 **<p>b) Некоррелированность:</p>**
-**<p>Переменные некоррелированы тогда и только тогда, когда $Cov(\xi,\eta)=0$. Значит $\xi$ и $\eta$ некоррелированы</p>**
+**<p>Переменные некоррелированы тогда и только тогда, когда $Cov(\eta_1,\eta_2)=0$. Значит $\eta_1$ и $\eta_2$ некоррелированы</p>**
 **<p>Независимость: </p>**
-**<p>Если бы $\xi$ и $\eta$ были независимы, то для всех значений должно выполняться $P(\xi=x,\eta=y)=P(\xi=x)P(\eta=y)$. Достаточно показать контрпример, например, $P(\xi=2,\eta=0) = 0 \ne P(\xi=2)\*P(\eta=0)$</p>**
+**<p>(\eta_1) и (\eta_2) связаны детерминистически: (\eta_1^2+\eta_2^2=1) почти наверное, поэтому они зависимы$</p>**
 
 ## 1.2.5
 
 **<p>$\omega = \xi + \eta$</p>**
-**<p>$F_\omega(y) = \int_{-\infty}^{\infty} F_\xi(x) \* F_\eta(y-x)dx = \int_{0}^{\infty} 2e^{-2x} \* 1dx = $</p>**
+**<p>$$F_\omega(t) = \int_{-\infty}^{\infty} F_\xi(t) \* F_\eta(t-y)dy =\int_{0}^{1} F_\xi(t-y),\mathbf{1}{{t-y\ge0}}dy = \int_{0}^{\min(1,t)} 2e^{-2(t-y)}dy
+=2e^{-2t}\int_{0}^{\min(1,t)} e^{2y}dy$$</p>**
+**<p>Рассмотрим три случая: </p>**
+**<p>$1. (t<0) \quad\Rightarrow\quad \min(1,t)=t<0 — нет пересечения с ([0,1]), значит F_\omega(t)=0 $</p>**
+**<p>$2. (0\le t<1) \quad\Rightarrow\quad \min(1,t)=t: $</p>**
+**<p>$F_\omega(t) = 2e^{-2t}\int_0^t e^{2y}dy=2e^{-2t}\cdot\frac{e^{2t}-1}{2}=1-e^{-2t} $</p>**
+**<p>$3. (t\ge1) \quad\Rightarrow\quad \min(1,t)=1: $</p>**
+**<p>$F_\omega(t) = 2e^{-2t}\int_0^1 e^{2y}dy=2e^{-2t}\cdot\frac{e^{2}-1}{2}=(e^{2}-1)e^{-2t} $</p>**
+**<p>Итого, получаем: </p>**
+**<p>$$\boxed{,F_\omega(t)=
+\begin{cases}
+0,& t<0,[4pt]
+1-e^{-2t},& 0\le t<1,[4pt]
+(e^{2}-1),e^{-2t},& t\ge1.
+\end{cases},} $$</p>**
+
 
 
 
