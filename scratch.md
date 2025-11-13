@@ -115,8 +115,8 @@ Cov(\xi,\eta) & \mathrm{Var}(\eta)
 
 **<p>c) Математические ожидания:</p>**
 **<p>$E\xi = 2\cdot\tfrac{1}{16} + 3\cdot\tfrac18 + 4\cdot\tfrac{3}{16} + 5\cdot\tfrac14 + 6\cdot\tfrac{3}{16} + 7\cdot\tfrac18 + 8\cdot\tfrac{1}{16} = 5$</p>**
-**<p>$E\eta = (1)\cdot\tfrac34 + 0\cdot\tfrac14 = frac34$</p>**
-**<p>Мат. ожидание вектора: $E(\xi,\eta) = (5, frac34)$</p>**
+**<p>$E\eta = (1)\cdot\tfrac34 + 0\cdot\tfrac14 = \frac34$</p>**
+**<p>Мат. ожидание вектора: $E(\xi,\eta) = (5, \frac34)$</p>**
 
 **<p>Дисперсии: </p>**
 **<p>Так как (\xi_1,\xi_2) независимы</p>**
@@ -158,9 +158,9 @@ Cov(\xi,\eta) & \mathrm{Var}(\eta)
 
 **<p>Дисперсии: </p>**
 **<p>$E[\cos^2\xi]=\frac{1}{2\pi}\int_{-\pi}^{\pi}\cos^2 x dx=\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{1+\cos 2x}{2} dx=\frac12$</p>**
-**<p>$mathrm{Var}(\eta_1)=E[\cos^2\xi]-0=\frac12$</p>**
+**<p>$Var(\eta_1)=E[\cos^2\xi]-0=\frac12$</p>**
 **<p>$E[\sin^2\xi]=\frac{1}{2\pi}\int_{-\pi}^{\pi}\sin^2 x dx=\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{1-\cos 2x}{2} dx=\frac12$</p>**
-**<p>$mathrm{Var}(\eta_2)=E[\sin^2\xi]-0=\frac12$</p>**
+**<p>$Var(\eta_2)=E[\sin^2\xi]-0=\frac12$</p>**
 
 **<p>Ковариация: </p>**
 **<p>$Cov(\eta_1,\eta_2)=E[\cos\xi\sin\xi]-E\cos\xi \* E\sin\xi=E\Big(\frac12\sin2\xi\Big)=\frac12\cdot0=0$</p>**
@@ -197,10 +197,11 @@ Cov(\eta_1,\eta_2) & \mathrm{Var}(\eta_2)
 **<p>Итого, получаем: </p>**
 **<p>$$\boxed{,F_\omega(t)=
 \begin{cases}
-0,& t<0,[4pt]
-1-e^{-2t},& 0\le t<1,[4pt]
+0,& t<0,
+1-e^{-2t},& 0\le t<1,
 (e^{2}-1),e^{-2t},& t\ge1.
 \end{cases},} $$</p>**
+
 
 
 
